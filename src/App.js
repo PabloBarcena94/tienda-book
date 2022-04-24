@@ -2,7 +2,7 @@
 import './App.css'
 import { NavBar } from './components/NavBar/NavBar.js'
 import {ItemListContainer} from './components/ListContainer/ItemListContainer.js' 
-
+import {ItemCount} from './components/ItemCount/ItemCount'
 
 
 
@@ -19,6 +19,7 @@ function App() {
       <div>
           <ItemListContainer userName={name}/>
       </div>
+          <ItemCount stock ={5} initial={1} const funcionAlert = {(count) => alert(`el numero agregado es ${count}`)}/>
     </div>
         
   );
