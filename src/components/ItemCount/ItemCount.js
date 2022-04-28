@@ -1,7 +1,7 @@
 import {useState} from 'react'
 
 
-export function ItemCount ({stock, initial=1, onAdd}) {
+ export function ItemCount ({stock, initial=1, onAdd}) {
 
     const [contador, setContador] = useState (initial)
 
@@ -26,12 +26,11 @@ export function ItemCount ({stock, initial=1, onAdd}) {
                 <button onClick={() => handleCount ('+')}> + </button>
                 
             <div>
-                <button disabled={!stock} onClick={onAdd(initial)}>Agregar al carrito</button>
-                
+                <button disabled={!stock} onClick={onAdd(initial)}>Agregar al carrito</button>    
             </div>
         
         </div>
         
 
     )
-}
+} //

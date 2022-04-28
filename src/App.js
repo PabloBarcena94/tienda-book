@@ -2,14 +2,17 @@
 import './App.css'
 import { NavBar } from './components/NavBar/NavBar.js'
 import {ItemListContainer} from './components/ListContainer/ItemListContainer.js' 
-import {ItemCount} from './components/ItemCount/ItemCount'
+import {ItemCount} from './components/ItemCount/ItemCount.js'
 
 
 
 function App() {
   
-  const name ='Productos'
   
+  const onAdd = (count) => {
+    console.log (`el numero agregado es ${count}`)
+  }
+  const name ='Productos'
 
   return (
     <div className="App">
@@ -19,10 +22,13 @@ function App() {
       <div>
           <ItemListContainer userName={name}/>
       </div>
-          <ItemCount stock ={5} initial={1} const funcionAlert = {(count) => alert(`el numero agregado es ${count}`)}/>
+          <ItemCount stock ={5} initial={1} onAdd = {onAdd}/>
     </div>
+
+      
         
   );
   
 }
 export default App;
+

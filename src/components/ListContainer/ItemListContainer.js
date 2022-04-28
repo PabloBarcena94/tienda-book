@@ -1,7 +1,8 @@
-export function ItemListContainer (props) {
+import ItemList from "./ItemList";
+export function ItemListContainer () {
     return (
             <div>
-              <h2>{props.userName}</h2>
+               <ItemList/>
             </div>
     );
   }
