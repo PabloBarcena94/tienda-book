@@ -4,6 +4,15 @@ import { NavBar } from './components/NavBar/NavBar.js'
 import {ItemListContainer} from './components/ListContainer/ItemListContainer.js' 
 import {ItemCount} from './components/ItemCount/ItemCount.js'
 
+/* import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+
+import ItemDetailContainer from './components/ItemDetailContainer';  */
+
+
 
 
 function App() {
@@ -19,12 +28,16 @@ function App() {
       <NavBar/>
       <h1>Hello</h1>
 
-      <div>
-          <ItemListContainer userName={name}/>
-      </div>
           <ItemCount stock ={5} initial={1} onAdd = {onAdd}/>
+            
+              
+                <div className = "grid__container"><ItemListContainer userName={name}/></div>
+                
+          
+            
     </div>
 
+    
       
         
   );

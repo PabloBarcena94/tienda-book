@@ -1,4 +1,5 @@
-
+import React from 'react';
+//import {Link} from "Link";
 const ItemCard = ( props ) => {
 
   const {title, author, description, price, pictureUrl} = props.productos
@@ -12,8 +13,8 @@ return (
       <p>{description}</p>
       <p>{price}</p>
       <div className="card-actions justify-end">
-        <button className="btn btn-primary">Ver detalle del producto</button>
-     </div>
+      <button className="btn btn-primary"> Ver detalle del producto </button>
+      </div>
     </div>
   </div>
 )
