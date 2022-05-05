@@ -1,8 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
+import ItemDetailContainer from '../../detalleProductos/ItemDetailContainer';
+
 //import {Link} from "Link";
 const ItemCard = ( props ) => {
 
-  const {title, author, description, price, pictureUrl} = props.productos
+  const {id, title, author, description, price, pictureUrl} = props.productos
+
+  const [buttonClicked, setButtonClicked] = useState(false);
+
+    const handleButtonClick = () => {
+        setButtonClicked(true)
+    }
   
 return (
   <div className="card w-96 bg-base-100 shadow-xl">
@@ -13,8 +21,11 @@ return (
       <p>{description}</p>
       <p>{price}</p>
       <div className="card-actions justify-end">
-      <button className="btn btn-primary"> Ver detalle del producto </button>
+      <button className="btn btn-primary" onClick={handleButtonClick}> Ver detalle del producto </button>
       </div>
+    </div>
+    <div>
+      {buttonClicked ? (<ItemDetailContainer id={id}></ItemDetailContainer>): null}
     </div>
   </div>
 )

@@ -1,20 +1,21 @@
 
 import React from 'react';
+
 //import {Link} from "Link";
 const ItemDetail = ( props ) => {
 
-  const {title, resumen, price, pictureUrl} = props.curso
+  const {titulo, resumen, precio, imagen} = props.ver
   return (
     <div class="container">
         <div class="row">
             <div class="col">
-                Column
+                {titulo}
             </div>
             <div class="col">
-                Column
+                {resumen}
             </div>
             <div class="col">
-                Column
+                {precio} {imagen}
             </div>
         </div>
     </div>

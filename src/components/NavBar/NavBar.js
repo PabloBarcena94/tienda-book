@@ -1,5 +1,5 @@
 import {CartWidget} from '../CartWidget/CartWidget.js'
-
+import { Link } from 'react-router-dom';
 
 export function NavBar() {
 
@@ -17,7 +17,7 @@ export function NavBar() {
           <a className="nav-link active" aria-current="page" href="#">INICIO</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">CONTACTO</a>
+          <Link to={'/Contacto'} className="nav-link">CONTACTO</Link>
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
