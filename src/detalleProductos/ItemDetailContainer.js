@@ -58,5 +58,3 @@ const ItemDetailContainer = () => {
    )
 }
 export default ItemDetailContainer;
-
-//{ver.map ( m => <ItemDetail key={m.id} ver={m}/>)}
