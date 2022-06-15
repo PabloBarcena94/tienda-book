@@ -37,26 +37,4 @@
   }
 }
 
-.grid {
-  display: flex;
-  justify-content: center;
-}
 
-.grid__container {
-  
-  display: grid;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-bottom: 30px;
-
-  /* 3 columnas */
-  grid-template-columns: repeat(4, 1fr); /*minmax(auto, 400px) minmax(auto, 400px)*/;
-  grid-column-gap: 20px;
-  background-color: seagreen;
-  border-color: blue;
-  /* varias filas */
-  grid-template-rows: repeat(3, 400px);
-  grid-row-gap: 30px;
-  background-color: white;
-  border-color: red;
-}

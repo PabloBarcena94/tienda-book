@@ -17,7 +17,7 @@ export const detalleProductos = [
     {   id: 3, 
         title: 'El camino de los Reyes', 
         author: 'Brandon Sanderson', 
-        description: 'El camino de los reyes es el primer volumen de «El Archivo de las Tormentas», el resultado de más de una década de construcción y escritura de universos, convertido en una obra maestra de la fantasía contemporánea en diez volúmenes. Con ella, Brandon Sanderson se postula como el autor del género que más lectores está ganando en todo el mundo.', 
+        description: 'El camino de los reyes es el primer volumen de «El Archivo de las Tormentas», el resultado de más de una década de construcción y escritura de universos, convertido en una obra maestra de la fantasía contemporánea en diez volúmenes.', 
         price: '$2600', 
         pictureUrl: "https://imagessl1.casadellibro.com/a/l/t5/41/9788413143941.jpg",
     },

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import ItemDetailContainer from '../../detalleProductos/ItemDetailContainer';
+import './ItemCard.css'  
 
 //import {Link} from "Link";
 const ItemCard = ( props ) => {
@@ -13,8 +14,11 @@ const ItemCard = ( props ) => {
     }
   
 return (
+  
+  <div className="cards">
   <div className="card w-96 bg-base-100 shadow-xl">
-    <figure><img src={pictureUrl} alt="Shoes" /></figure>
+    
+    <figure><img src={pictureUrl} alt="Shoes"/></figure>
     <div className="card-body">
       <h2 className="card-title">{title}</h2>
       <h5>{author}</h5>
@@ -24,9 +28,12 @@ return (
       <button className="btn btn-primary" onClick={handleButtonClick}> Ver detalle del producto </button>
       </div>
     </div>
+    
+    </div>
     <div>
       {buttonClicked ? (<ItemDetailContainer id={id}></ItemDetailContainer>): null}
     </div>
+
   </div>
 )
 }

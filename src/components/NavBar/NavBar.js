@@ -24,9 +24,8 @@ export function NavBar() {
             CATEGORÍAS
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Comics, novelas gráficas y manga</a></li>
+            <li><a class="dropdown-item" href="#">Comics</a></li>
             <li><a class="dropdown-item" href="#">Ficción</a></li>
-            <li><a class="dropdown-item" href="#">Arte</a></li>
             <li><a class="dropdown-item" href="#">Juveniles</a></li>
           </ul>
         </li>

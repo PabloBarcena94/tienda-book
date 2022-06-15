@@ -21,15 +21,15 @@ export const Contacto = () => {
                         <textarea class="form__control" name="comentarios" id="comentarios" cols="53" rows="5" placeholder="Comentarios..."></textarea>
                             <div class="contacto__checkbox">
                                 <input name="producto" type="checkbox" id="producto" value="remera"/>
-                                <label class="contacto__label" for="producto">Remera</label>
+                                <label class="contacto__label" for="producto"></label>
                             </div>
                             <div class="contacto__checkbox">    
                                 <input name="producto" type="checkbox" id="producto" value="campera"/>
-                                <label class="contacto__label" for="producto">Campera</label>
+                                <label class="contacto__label" for="producto"></label>
                             </div> 
                             <div class="contacto__checkbox"> 
                                 <input name="producto" type="checkbox" id="producto" value="pantalon"/>
-                                <label class="contacto__label" for="producto">Pantalon</label>
+                                <label class="contacto__label" for="producto"></label>
                             </div>    
                         <input class="form__boton" type="submit" value="enviar"/>
                     </form>

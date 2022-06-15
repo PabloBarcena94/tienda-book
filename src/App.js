@@ -19,7 +19,11 @@ function App() {
             <h1>PowerBook</h1>
               <ItemCount stock ={5} initial={1} onAdd = {onAdd}/>
             
-              <div className = "grid__container"><ItemListContainer userName={name}/></div>
+              <div className = "grid__container">
+                <h2>Los más vendidos</h2>
+                <ItemListContainer userName={name}/>
+              </div>
+              
           
         </div>
   );
