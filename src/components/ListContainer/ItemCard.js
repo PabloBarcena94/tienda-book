@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import ItemDetailContainer from '../../detalleProductos/ItemDetailContainer';
+import { ItemCount } from '../ItemCount/ItemCount';
 import './ItemCard.css'  
 
 //import {Link} from "Link";
@@ -13,8 +14,8 @@ const ItemCard = ( props ) => {
         setButtonClicked(true)
     }
   
-return (
-  
+return ( 
+
   <div className="cards">
   <div className="card w-96 bg-base-100 shadow-xl">
     
@@ -25,7 +26,7 @@ return (
       <p>{description}</p>
       <p>{price}</p>
       <div className="card-actions justify-end">
-      <button className="btn btn-primary" onClick={handleButtonClick}> Ver detalle del producto </button>
+      <button className="btn btn-primary" onClick={handleButtonClick}> Ver detalle</button>
       </div>
     </div>
     
@@ -33,7 +34,8 @@ return (
     <div>
       {buttonClicked ? (<ItemDetailContainer id={id}></ItemDetailContainer>): null}
     </div>
-
+    
+    
   </div>
 )
 }
